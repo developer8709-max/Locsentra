@@ -1,8 +1,6 @@
 # Loc 🐶
 **Locsentra** is a simple and light tool for information gathering and capture exact GPS coordinates
 
-![LocSentra](https://via.placeholder.com/800x400/1a1a2e/00d4ff.png?text=LocSentra+-+GPS+Tracker)
-
 # What is Locsentra?
 
 <p><strong>Locsentra</strong> is a powerful tool that can remotely capture the exact GPS coordinates of a target device using a PHP server, and can also grab comprehensive system and ISP information. This tool is perfect for information gathering and reconnaissance. You can extract the following information from target devices:</p>

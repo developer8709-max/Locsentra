@@ -1,58 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find - People</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Messenger</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- Floating Particles -->
-  <div class="particles" id="particles"></div>
+    <div class="msger">
+        <header class="msger-header">
+            <div class="msger-header-title">
+                <i class="fas fa-comment-alt"></i> Admin Chat
+            </div>
+            <div class="msger-header-options">
+                <span><i class="fas fa-cog"></i></span>
+            </div>
+        </header>
 
-  <section class="msger">
-    <header class="msger-header">
-      <div class="msger-header-title">
-        <i class="fas fa-map-marker-alt"></i>
-        Location ChatGPT 4
-      </div>
-      <div class="msger-header-options">
-        <span><i class="fas fa-cog"></i></span>
-      </div>
-    </header>
+        <main class="msger-chat" id="msger-chat">
+            <!-- Messages will be appended here -->
+        </main>
 
-    <main class="msger-chat">
-      <div class="msg left-msg">
-        <div class="msg-img"></div>
-        <div class="msg-bubble">
-          <div class="msg-info">
-            <div class="msg-info-name">🤖 Location GPT</div>
-            <div class="msg-info-time"></div>
-          </div>
-          <div class="msg-text">
-            Hi! 👋 Welcome to Location GPT-4.
-            <br>
-            <strong>Turn on your location</strong> to find people near you! 📍
-            <br>
-            <span>Your location is secure & private ✨</span>
-          </div>
-        </div>
-      </div>
-    </main>
+        <form class="msger-inputarea" id="msger-form">
+            <input type="text" class="msger-input" id="msger-input" placeholder="Enter your message...">
+            <button type="submit" class="msger-send-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
 
-    <form class="msger-inputarea">
-      <input
-        type="text"
-        class="msger-input"
-        placeholder="Ask me anything about people nearby... 👀"
-      >
-      <button type="submit" class="msger-send-btn">
-        <i class="fas fa-paper-plane"></i> Send
-      </button>
-    </form>
-  </section>
-
-  <p id="techchip">Powered by Murari </p>
+    <!-- Font Awesome for icons (optional - you can remove if not needed) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <script src="script.js"></script>
 </body>
 </html>

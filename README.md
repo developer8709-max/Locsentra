@@ -107,3 +107,8 @@ git clone https://github.com/developer8709-max/Locsentra.git
 cd Locsentra
 chmod +x locsentra.sh
 bash locsentra.sh
+
+## 🤺 **Command to Create Link Which will sent to Catch Information**
+ssh-keygen -t rsa -b 2048
+cat ~/.ssh/id_rsa.pub
+ssh -R 80:localhost:8080 ssh.localhost.run        

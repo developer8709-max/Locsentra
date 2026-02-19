@@ -1,7 +1,6 @@
 #!/bin/bash
-# Hound v 0.2
-# Powered by TechChip
-# visit https://youtube.com/techchipnet
+# Locsentra v 0.2
+# Powered by Developer
 
 trap 'printf "\n";stop' 2
 

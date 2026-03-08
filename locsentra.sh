@@ -14,7 +14,7 @@ printf '       ██     ██    ██ ██    ██      ██ ██  
 printf '       ██████  ██████   ██████  ███████ ███████ ██   ████    ██    ██   ██  ██████  \n\n'
 
 printf '\e[1;31m       ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\e[0m\n'
-printf " \e[1;93m      LOCSENTRA Ver 0.2 - by Murari Singh [developer8709-max]\e[0m \n"
+printf " \e[1;93m      LOCSENTRA Ver 0.2 - by DEVELOPER EXPLOITS [developer8709-max]\e[0m \n"
 printf " \e[1;92m      [github.com/developer8709-max] | LOCSENTRA Project\e[0m \n"
 printf "\e[1;90m LOCSENTRA is a location intelligence tool for GPS tracking and geospatial analysis.\e[0m \n"
 printf "\n"
